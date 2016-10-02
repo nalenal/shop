@@ -1807,3 +1807,66 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1475380894.712
     'REQUEST_TIME' => 1475380894
 ]
+2016-10-02 06:28:22 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/alogin' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Controller.php:122
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('alogin', Array)
+#1 /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('site/alogin', Array)
+#2 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/html/yii2-shop/frontend/web/index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/yii2-shop/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-10-02 06:28:22 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_identity-backend' => '83f947e1b7c64690f0a4255a96a046f4ba275517264b6b8ff62e8b5d2b231481a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"cX2TrEvpxrYsHlhYGYyQ4P3APqj1CvsQ\",2592000]\";}'
+    'PHPSESSID' => 'i2kc4tobb0ob0j68o41jgjnsp0'
+    '_csrf' => 'ee7c1aa493fc88a693cb1e9728f563a230fba20c2014e95f3de4ebed12875ab5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"yLzI8FN4-JYIEmqc8_mUBntYI-qDJl4g\";}'
+    'advanced-frontend' => 'u3b2cpavdmh7fe63m7dqdn5t54'
+    '_csrf-frontend' => '56a9c38ac58e3cb51934cb8d237515145e5e187867b19f015840504c98dad48ba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"wz-nCcuUt3sCgYBZiFXvsznvORyQmQy9\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2-shop/'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity-backend=83f947e1b7c64690f0a4255a96a046f4ba275517264b6b8ff62e8b5d2b231481a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22cX2TrEvpxrYsHlhYGYyQ4P3APqj1CvsQ%22%2C2592000%5D%22%3B%7D; PHPSESSID=i2kc4tobb0ob0j68o41jgjnsp0; _csrf=ee7c1aa493fc88a693cb1e9728f563a230fba20c2014e95f3de4ebed12875ab5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22yLzI8FN4-JYIEmqc8_mUBntYI-qDJl4g%22%3B%7D; advanced-frontend=u3b2cpavdmh7fe63m7dqdn5t54; _csrf-frontend=56a9c38ac58e3cb51934cb8d237515145e5e187867b19f015840504c98dad48ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22wz-nCcuUt3sCgYBZiFXvsznvORyQmQy9%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2-shop/frontend/web/index.php'
+    'REMOTE_PORT' => '43752'
+    'REDIRECT_URL' => '/yii2-shop/frontend/web/site/alogin'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-shop/site/alogin'
+    'SCRIPT_NAME' => '/yii2-shop/frontend/web/index.php'
+    'PHP_SELF' => '/yii2-shop/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1475389702.206
+    'REQUEST_TIME' => 1475389702
+]
