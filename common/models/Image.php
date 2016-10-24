@@ -56,6 +56,7 @@ class Image extends \yii\db\ActiveRecord
     public function getPath()
     {
         return Yii::getAlias('@frontend/web/images/' . $this->getHash() . '.jpg');
+      //  return Yii::getAlias('http://localhost/yii2-shop/web/images/' . $this->getHash() . '.jpg');
     }
 
     /**
@@ -63,7 +64,9 @@ class Image extends \yii\db\ActiveRecord
      */
     public function getUrl()
     {
-        return Yii::getAlias('@frontendWebroot/images/' . $this->getHash() . '.jpg');
+       // return Yii::getAlias('@frontendWebroot/images/' . $this->getHash() . '.jpg');
+        return Yii::getAlias('/yii2-shop/images/' . $this->getHash() . '.jpg');
+        // Yii::app->request->baseUrl;
     }
 
     public function afterDelete()

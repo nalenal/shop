@@ -3,7 +3,7 @@ use yii\helpers\Html;
 use yii\helpers\Markdown;
 ?>
 <?php /** @var $model \common\models\Product */ ?>
-<div class="col-xs-12 well">
+<div class="col-xs-6 well">
     <div class="col-xs-2">
         <?php
         $images = $model->images;

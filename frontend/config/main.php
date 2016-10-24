@@ -13,7 +13,7 @@ return [
     'controllerNamespace' => 'frontend\controllers',
     'defaultRoute' => 'catalog/list',
     //
-    'homeUrl' => '/yii2-shop/site',
+    'homeUrl' => '/yii2-shop',
 
     'components' => [
         //
