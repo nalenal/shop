@@ -1,5 +1,10 @@
 <?php
 /* @var $this yii\web\View */
+
+/*
+ TODO list:
+ -carousel
+*/
 ?>
 
 
